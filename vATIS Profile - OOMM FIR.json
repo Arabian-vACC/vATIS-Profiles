@@ -1,0 +1,201 @@
+{
+  "Name": "OOMM FIR",
+  "Composites": [
+    {
+      "Id": "c3e4dd5d-9e0a-407a-b8fe-b3545b36e798",
+      "Name": "Muscat",
+      "Identifier": "OOMS",
+      "AtisType": 0,
+      "Contractions": [
+        {
+          "String": "OOSA",
+          "Spoken": "SALALAH"
+        },
+        {
+          "String": "WS",
+          "Spoken": "WINDSHEAR"
+        },
+        {
+          "String": "ZERO ZERO ZERO DEGREES, ZERO KNOT",
+          "Spoken": "CALM"
+        },
+        {
+          "String": "CAVOK",
+          "Spoken": "CAV-OKAY"
+        },
+        {
+          "String": "VOR",
+          "Spoken": "V O R"
+        },
+        {
+          "String": "ILS ",
+          "Spoken": "EYE L ESS"
+        },
+        {
+          "String": "CTC",
+          "Spoken": "CONTACT"
+        },
+        {
+          "String": "CTRL",
+          "Spoken": "CONTROL"
+        }
+      ],
+      "AtisFrequency": 26800,
+      "ObservationTime": {
+        "Enabled": false,
+        "Time": 0
+      },
+      "MagneticVariation": {
+        "Enabled": false,
+        "MagneticDegrees": 0
+      },
+      "AtisVoice": {
+        "UseTextToSpeech": true,
+        "Voice": "UK Female"
+      },
+      "IDSEndpoint": null,
+      "Presets": [
+        {
+          "Name": "26R - WEST CONFIG",
+          "AirportConditions": null,
+          "Notams": null,
+          "ArbitraryText": null,
+          "Template": "THIS IS OOMS ARPT ATIS INFORMATION [ATIS_CODE]. AT TIME [OBS_TIME]. EXP ILS APP. LDG RWY 26R. DEP RWY 26R. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE INFO [ATIS_CODE].",
+          "ExternalGenerator": {
+            "Url": null,
+            "Arrival": null,
+            "Departure": null,
+            "Approaches": null,
+            "Remarks": null
+          }
+        },
+        {
+          "Name": "08L - EAST CONFIG",
+          "AirportConditions": null,
+          "Notams": null,
+          "ArbitraryText": null,
+          "Template": "THIS IS OOMS ARPT ATIS INFORMATION [ATIS_CODE]. AT TIME [OBS_TIME]. EXP ILS APP. LDG RWY 08L. DEP RWY 08L. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE INFO [ATIS_CODE].",
+          "ExternalGenerator": {
+            "Url": null,
+            "Arrival": null,
+            "Departure": null,
+            "Approaches": null,
+            "Remarks": null
+          }
+        }
+      ],
+      "AirportConditionDefinitions": [
+        {
+          "Ordinal": 1,
+          "Text": "LVO ENFORCED",
+          "Enabled": false
+        }
+      ],
+      "AirportConditionsBeforeFreeText": false,
+      "NotamDefinitions": [],
+      "NotamsBeforeFreeText": false,
+      "TransitionLevels": [],
+      "UseFaaFormat": false,
+      "UseNotamPrefix": true,
+      "UseTransitionLevelPrefix": true,
+      "UseMetricUnits": false,
+      "UseSurfaceWindPrefix": false,
+      "UseVisibilitySuffix": true,
+      "UseDecimalTerminology": true
+    },
+    {
+      "Id": "6e2b305f-46ea-49e4-88be-27a6666729c7",
+      "Name": "Salalah",
+      "Identifier": "OOSA",
+      "AtisType": 0,
+      "Contractions": [
+        {
+          "String": "OOSA",
+          "Spoken": "SALALAH"
+        },
+        {
+          "String": "WS",
+          "Spoken": "WINDSHEAR"
+        },
+        {
+          "String": "CAVOK",
+          "Spoken": "CAV-OK"
+        },
+        {
+          "String": "VOR",
+          "Spoken": "V O R"
+        },
+        {
+          "String": "CTC",
+          "Spoken": "CONTACT"
+        },
+        {
+          "String": "CTRL",
+          "Spoken": "CONTROL"
+        }
+      ],
+      "AtisFrequency": 18000,
+      "ObservationTime": {
+        "Enabled": false,
+        "Time": 0
+      },
+      "MagneticVariation": {
+        "Enabled": false,
+        "MagneticDegrees": 0
+      },
+      "AtisVoice": {
+        "UseTextToSpeech": true,
+        "Voice": "Default"
+      },
+      "IDSEndpoint": null,
+      "Presets": [
+        {
+          "Name": "25 - WEST CONFIG",
+          "AirportConditions": null,
+          "Notams": null,
+          "ArbitraryText": null,
+          "Template": "THIS IS OOSA ARPT ATIS INFORMATION [ATIS_CODE]. AT TIME [OBS_TIME]. EXP ILS APP. LDG RWY 25. DEP RWY 25. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE INFO [ATIS_CODE].",
+          "ExternalGenerator": {
+            "Url": null,
+            "Arrival": null,
+            "Departure": null,
+            "Approaches": null,
+            "Remarks": null
+          }
+        },
+        {
+          "Name": "07 - EAST CONFIG",
+          "AirportConditions": null,
+          "Notams": null,
+          "ArbitraryText": null,
+          "Template": "THIS IS OOSA ARPT ATIS INFORMATION [ATIS_CODE]. AT TIME [OBS_TIME]. EXP ILS APP. LDG RWY 07. DEP RWY 07. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND]. [NOTAMS]. ACKNOWLEDGE INFO [ATIS_CODE].",
+          "ExternalGenerator": {
+            "Url": null,
+            "Arrival": null,
+            "Departure": null,
+            "Approaches": null,
+            "Remarks": null
+          }
+        }
+      ],
+      "AirportConditionDefinitions": [
+        {
+          "Ordinal": 1,
+          "Text": "LVO ENFORCED",
+          "Enabled": false
+        }
+      ],
+      "AirportConditionsBeforeFreeText": false,
+      "NotamDefinitions": [],
+      "NotamsBeforeFreeText": false,
+      "TransitionLevels": [],
+      "UseFaaFormat": false,
+      "UseNotamPrefix": true,
+      "UseTransitionLevelPrefix": true,
+      "UseMetricUnits": false,
+      "UseSurfaceWindPrefix": false,
+      "UseVisibilitySuffix": false,
+      "UseDecimalTerminology": false
+    }
+  ]
+}
