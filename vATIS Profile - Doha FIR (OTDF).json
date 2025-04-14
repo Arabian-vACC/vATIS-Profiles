@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 4,
   "name": "Doha (OTDF) 14 APR 2025",
   "id": "50c31ce4-e1e2-4774-ab4b-acebb937142f",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
@@ -4001,8 +4001,13 @@
       ],
       "airportConditionDefinitions": [
         {
+          "text": "A-CDM IN USE.",
+          "ordinal": 0,
+          "enabled": false
+        },
+        {
           "text": "LVP IN FORCE.",
-          "ordinal": 1,
+          "ordinal": 2,
           "enabled": false
         }
       ],
@@ -6017,13 +6022,18 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "HIRO IN FORCE.",
+          "text": "A-CDM IN USE.",
           "ordinal": 0,
           "enabled": false
         },
         {
-          "text": "LVP IN FORCE.",
+          "text": "HIRO IN FORCE.",
           "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "LVP IN FORCE.",
+          "ordinal": 3,
           "enabled": false
         }
       ],
