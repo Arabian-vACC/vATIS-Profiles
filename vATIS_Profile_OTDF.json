@@ -1,9 +1,9 @@
 {
   "version": 1,
-  "name": "Doha FIR (OTDF) 13 APR 2025",
+  "name": "Doha FIR (OTDF) 20 APR 2025",
   "id": "57615658-d2cf-4451-b5ef-2f65dd85a90a",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS_Profile_OTDF.json",
-  "updateSerial": 2025041404,
+  "updateSerial": 2025041405,
   "stations": [
     {
       "id": "a07c0657-751d-42b1-a982-515c7bc499cc",
