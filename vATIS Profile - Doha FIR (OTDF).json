@@ -1,4 +1,5 @@
 {
+  "version": 1,
   "name": "Doha (OTDF) 14 APR 2025",
   "id": "50c31ce4-e1e2-4774-ab4b-acebb937142f",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
@@ -8113,6 +8114,5 @@
       ],
       "notamDefinitions": []
     }
-  ],
-  "version": 4
+  ]
 }
