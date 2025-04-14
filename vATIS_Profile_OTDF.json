@@ -1,4 +1,5 @@
 {
+  "version": 1,
   "name": "Doha FIR (OTDF)",
   "id": "57615658-d2cf-4451-b5ef-2f65dd85a90a",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS_Profile_OTDF.json",
@@ -7979,6 +7980,5 @@
       "airportConditionDefinitions": [],
       "notamDefinitions": []
     }
-  ],
-  "version": 4
+  ]
 }
