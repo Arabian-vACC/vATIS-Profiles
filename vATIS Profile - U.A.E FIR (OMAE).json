@@ -14627,8 +14627,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "THIS WAS SHARJAH ATIS INFORMATION {letter|word}. OUT",
+            "voice": "THIS WAS SHARJAH ATIS INFORMATION {letter|word}. OUT"
           }
         }
       },
@@ -14644,17 +14644,55 @@
       },
       "presets": [
         {
-          "id": "8875296d-ffa6-4bcb-8975-38addc352e8a",
-          "name": "30 - NORTH-WEST CONFIG",
-          "template": "THIS IS SHARJAH ATIS INFORMATION [ATIS_CODE]. TIME [OBS_TIME]. ILS APP RWY 30 IN USE. MET REPORT [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS]. THIS WAS SHARJAH ATIS INFORMATION [ATIS_CODE], OUT.",
+          "id": "22c4968a-aa0f-4712-a174-3fd15fa4670c",
+          "ordinal": 1,
+          "name": "12 | ILS APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. ILS APP RWY 12 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
-          "id": "22c4968a-aa0f-4712-a174-3fd15fa4670c",
-          "name": "12 - SOUTH-EAST CONFIG",
-          "template": "THIS IS SHARJAH ATIS INFORMATION [ATIS_CODE]. TIME [OBS_TIME]. ILS APP RWY 12 IN USE. MET REPORT [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS]. THIS WAS SHARJAH ATIS INFORMATION [ATIS_CODE]. OUT",
+          "id": "3c33837d-fc84-4b90-b7ee-76e4e1e4fbfa",
+          "ordinal": 2,
+          "name": "12 | RNP Z APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RNP Z APP RWY 12 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "f5155404-9283-45ef-8bb6-519e248fa2de",
+          "ordinal": 2,
+          "name": "12 | RNP Y APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RNP Y APP RWY 12 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "8875296d-ffa6-4bcb-8975-38addc352e8a",
+          "ordinal": 4,
+          "name": "30 | ILS APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. ILS APP RWY 30 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "56aca0ba-ee87-4a23-8395-1f075ce418dd",
+          "ordinal": 5,
+          "name": "30 | RNP Z APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RNP Z APP RWY 30 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "505c0505-7fc6-468c-a213-fddfb4aec9eb",
+          "ordinal": 6,
+          "name": "30 | RNP Y APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RNP Y APP RWY 30 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -14662,39 +14700,9 @@
       ],
       "contractions": [
         {
-          "variableName": "OMSJ",
-          "text": "OMSJ",
-          "voice": "SHARJAH"
-        },
-        {
-          "variableName": "WS",
-          "text": "WS",
-          "voice": "WINDSHEAR"
-        },
-        {
-          "variableName": "ZERO_ZERO_ZERO_DEGREES_ZERO_KNOT",
-          "text": "ZERO ZERO ZERO DEGREES, ZERO KNOT",
-          "voice": "CALM"
-        },
-        {
-          "variableName": "CAVOK",
-          "text": "CAVOK",
-          "voice": "CAV-OKAY"
-        },
-        {
           "variableName": "ILS",
           "text": "ILS",
           "voice": "EYE L ESS"
-        },
-        {
-          "variableName": "LVO",
-          "text": "LVO",
-          "voice": "LOW VISIBILITY OPERATIONS"
-        },
-        {
-          "variableName": "E",
-          "text": "E",
-          "voice": "ECK-OH"
         },
         {
           "variableName": "MET",
@@ -14704,8 +14712,13 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "LVO ENFORCED",
+          "text": "A-CDM IN USE.",
           "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "LVO ENFORCED.",
+          "ordinal": 2,
           "enabled": false
         }
       ],
