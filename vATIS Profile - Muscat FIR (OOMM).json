@@ -1,6 +1,8 @@
 {
   "name": "Muscat (OOMM) 14 APR 2025",
   "id": "6ae8788b-434e-4196-bd38-083a8bdb5f41",
+  "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Muscat%20FIR%20(OOMM).json",
+  "updateSerial": 2025041501,
   "stations": [
     {
       "id": "c3e4dd5d-9e0a-407a-b8fe-b3545b36e798",
