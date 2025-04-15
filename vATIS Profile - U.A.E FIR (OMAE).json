@@ -16630,8 +16630,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "THIS WAS OMDW ATIS INFORMATION {letter|word}, OUT.",
+            "voice": "THIS WAS AL MAKTOUM ATIS INFORMATION {letter|word}, OUT."
           }
         }
       },
@@ -16647,17 +16647,37 @@
       },
       "presets": [
         {
-          "id": "e23c2c3b-cff0-45d6-b31e-f41eefebe426",
-          "name": "30/31 - NORTH-WEST CONFIG",
-          "template": "THIS IS OMDW ATIS INFORMATION [ATIS_CODE]. TIME [OBS_TIME]. ILS APP RWY 30 IN USE. MET REPORT [FULL_WX_STRING]. EFTA AIRCRAFT, RUNWAY 31 IN USE. INFORM EFTA GROUND PURPOSE OF FLIGHT AND ENDURANCE. [ARPT_COND]. [NOTAMS]. THIS WAS OMDW ATIS INFORMATION [ATIS_CODE], OUT.",
+          "id": "1491b3ef-977f-449a-a2e3-a4a9dfbd7ffa",
+          "ordinal": 1,
+          "name": "12/13 | ILS APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. ILS APP RWY 12 IN USE. MET REPORT [FULL_WX_STRING] MNM RWY OCCUPANCY REQUIRED. EFTA AIRCRAFT, RUNWAY 13 IN USE. INFORM EFTA GROUND PURPOSE OF FLIGHT AND ENDURANCE. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
-          "id": "1491b3ef-977f-449a-a2e3-a4a9dfbd7ffa",
-          "name": "12/13 - SOUTH-EAST CONFIG",
-          "template": "THIS IS OMDW ATIS INFORMATION [ATIS_CODE]. TIME [OBS_TIME]. ILS APP RWY 12 IN USE. MET REPORT [FULL_WX_STRING]. EFTA AIRCRAFT, RUNWAY 13 IN USE. INFORM EFTA GROUND PURPOSE OF FLIGHT AND ENDURANCE. [ARPT_COND]. [NOTAMS]. THIS WAS OMDW ATIS INFORMATION [ATIS_CODE], OUT.",
+          "id": "af3d26f0-b537-4191-a926-c5d4a7f13dd3",
+          "ordinal": 1,
+          "name": "12/13 | RNP APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RNP APP RWY 12 IN USE. MET REPORT [FULL_WX_STRING] MNM RWY OCCUPANCY REQUIRED. EFTA AIRCRAFT, RUNWAY 13 IN USE. INFORM EFTA GROUND PURPOSE OF FLIGHT AND ENDURANCE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "e23c2c3b-cff0-45d6-b31e-f41eefebe426",
+          "ordinal": 3,
+          "name": "30/31 | ILS APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. ILS APP RWY 30 IN USE. MET REPORT [FULL_WX_STRING] MNM RWY OCCUPANCY REQUIRED. EFTA AIRCRAFT, RUNWAY 31 IN USE. INFORM EFTA GROUND PURPOSE OF FLIGHT AND ENDURANCE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "f2318c7c-b034-4d28-b1ac-bb9aa11dda62",
+          "ordinal": 4,
+          "name": "30/31 | RNP APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RNP APP RWY 30 IN USE. MET REPORT [FULL_WX_STRING] MNM RWY OCCUPANCY REQUIRED. EFTA AIRCRAFT, RUNWAY 31 IN USE. INFORM EFTA GROUND PURPOSE OF FLIGHT AND ENDURANCE. [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -16665,29 +16685,9 @@
       ],
       "contractions": [
         {
-          "variableName": "OMDW",
-          "text": "OMDW",
-          "voice": "AL MAKTOUM INTERNATIONAL"
-        },
-        {
           "variableName": "EFTA",
           "text": "EFTA",
           "voice": "EMIRATES FLIGHT TRAINING ACADEMY"
-        },
-        {
-          "variableName": "WS",
-          "text": "WS",
-          "voice": "WINDSHEAR"
-        },
-        {
-          "variableName": "ZERO_ZERO_ZERO_DEGREES_ZERO_KNOT",
-          "text": "ZERO ZERO ZERO DEGREES, ZERO KNOT",
-          "voice": "CALM"
-        },
-        {
-          "variableName": "CAVOK",
-          "text": "CAVOK",
-          "voice": "CAV-OKAY"
         },
         {
           "variableName": "ILS",
@@ -16695,20 +16695,25 @@
           "voice": "EYE L ESS"
         },
         {
-          "variableName": "E",
-          "text": "E",
-          "voice": "ECK-OH"
-        },
-        {
           "variableName": "MET",
           "text": "MET",
           "voice": "METEOROLOGY"
+        },
+        {
+          "variableName": "MNM",
+          "text": "MNM",
+          "voice": "MINIMUM"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "LVO ENFORCED",
-          "ordinal": 1,
+          "text": "A-CDM IN USE.",
+          "ordinal": 0,
+          "enabled": false
+        },
+        {
+          "text": "LVO ENFORCED.",
+          "ordinal": 2,
           "enabled": false
         }
       ],
@@ -20616,8 +20621,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "THIS WAS OMAL ATIS INFORMATION {letter|word}, OUT.",
+            "voice": "THIS WAS AL AIN ATIS INFORMATION {letter|word}, OUT."
           }
         }
       },
@@ -20634,16 +20639,16 @@
       "presets": [
         {
           "id": "870e9e52-2a22-467d-801e-e2c32f6d75a9",
-          "name": "01 - NORTH CONFIG",
-          "template": "",
+          "name": "01 | SRO",
+          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RWY 01 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
           "id": "c8cb6cfd-4287-4066-a767-ec121c846255",
-          "name": "19 - SOUTH CONFIG",
-          "template": "OMAL ATIS INFORMATION [ATIS_CODE]. TIME [OBS_TIME]. RWY 19 IN USE. MET REPORT [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS]. THIS WAS OMAL ATIS INFORMATION [ATIS_CODE], OUT.",
+          "name": "19 | SRO",
+          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RWY 19 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -20668,7 +20673,7 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "LVO ENFORCED",
+          "text": "LVO ENFORCED.",
           "ordinal": 1,
           "enabled": false
         }
