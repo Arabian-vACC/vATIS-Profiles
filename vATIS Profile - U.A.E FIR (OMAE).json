@@ -24499,7 +24499,7 @@
       "notamsBeforeFreeText": false,
       "airportConditionsBeforeFreeText": false,
       "frequency": 131475000,
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "US Female",
@@ -26438,7 +26438,7 @@
       "notamsBeforeFreeText": false,
       "airportConditionsBeforeFreeText": false,
       "frequency": 132775000,
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "US Female",

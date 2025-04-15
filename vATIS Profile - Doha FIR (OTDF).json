@@ -5940,7 +5940,7 @@
       "airportConditionsBeforeFreeText": false,
       "frequency": 126850000,
       "idsEndpoint": "",
-      "useDecimalTerminology": false,
+      "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Female",
