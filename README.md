@@ -1,5 +1,5 @@
 ![vatis_github](https://github.com/user-attachments/assets/3c496f68-0dbc-4d89-8149-a6c6a2c6b9dd)
-[![qgis-version](https://img.shields.io/badge/vATIS-v4.1.0-beta.16-blue.svg)](https://vatis.app/)
+[![vATIS-version](https://img.shields.io/badge/vATIS-v4.1.0.beta.16-blue.svg)](https://vatis.app/)
 
 # Arabian vACC - vATIS Profiles
 Welcome to the official GitHub repository for the Arabian Virtual Area Control Center (vACC), dedicated to the creation and maintenance of **vATIS profiles** for use within the VATSIM network. This repository provides open-source resources that help standardize and enhance the delivery of automated terminal information across airports in the Arabian vACC region.
