@@ -27,31 +27,31 @@
           },
           "standard": {
             "template": {
-              "text": "{wind_dir}{wind_spd}KT",
+              "text": "WIND {wind_dir} DEG. {wind_spd} KT.",
               "voice": "WIND {wind_dir} AT {wind_spd}"
             }
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
+              "text": "WIND {wind_dir} DEG. {wind_spd} KT. GUST {wind_gust} KT.",
               "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
+              "text": "WIND VRB{wind_spd}KT.",
               "voice": "WIND VARIABLE AT {wind_spd}"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
+              "text": "WIND VRB{wind_spd}G{wind_gust}KT.",
               "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
             }
           },
           "variableDirection": {
             "template": {
-              "text": "{wind_vmin}V{wind_vmax}",
+              "text": "{wind_vmin}V{wind_vmax}.",
               "voice": "WIND VARIABLE BETWEEN {wind_vmin} AND {wind_vmax}"
             }
           },
@@ -77,7 +77,7 @@
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
-            "text": "{visibility}",
+            "text": "VIS {visibility}",
             "voice": "VISIBILITY {visibility}"
           }
         },
@@ -1894,14 +1894,14 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "D {dewpoint}",
+            "text": "DP {dewpoint}",
             "voice": "DEWPOINT {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter|hpa}",
+            "text": "QNH {altimeter|hpa} HPA",
             "voice": "QNH {altimeter|hpa}"
           }
         },
@@ -1921,8 +1921,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVS ATC COPIED {letter|word}.",
+            "voice": "ADVS ATC COPIED {letter|word}."
           }
         }
       },
@@ -1938,59 +1938,43 @@
       },
       "presets": [
         {
-          "id": "3055ea9b-65ab-42e9-877b-3f42e8297b0d",
-          "name": "30R - NORTH-WEST CONFIG",
-          "template": "[FACILITY] DEP [ATIS_LETTER]. AT TIME [TIME]. DEP RWY 30 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "fc65ef36-d538-4362-81d4-15faff6c5216",
-          "name": "30L - NORTH-WEST CONFIG",
-          "template": "[FACILITY] DEP [ATIS_LETTER]. AT TIME [TIME]. DEP RWY 30 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
           "id": "7254f3d9-be0d-4f77-b5c0-4a754f323463",
-          "name": "12L - SOUTH-EAST CONFIG",
-          "template": "[FACILITY] DEP [ATIS_LETTER]. AT TIME [TIME]. DEP RWY 12 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n",
+          "ordinal": 1,
+          "name": "12L | DEP",
+          "template": "[FACILITY] DEP [ATIS_CODE] [TIME]\r\n[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
           "id": "ff60aa58-f82e-42fc-a17a-52fcf8280d7f",
-          "name": "12R - SOUTH-EAST CONFIG",
-          "template": "[FACILITY] DEP [ATIS_LETTER]. AT TIME [TIME]. DEP RWY 12 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n",
+          "ordinal": 2,
+          "name": "12R | DEP",
+          "template": "[FACILITY] DEP [ATIS_CODE] [TIME]\r\n[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "fc65ef36-d538-4362-81d4-15faff6c5216",
+          "ordinal": 2,
+          "name": "30L | DEP",
+          "template": "[FACILITY] DEP [ATIS_CODE] [TIME]\r\n[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "3055ea9b-65ab-42e9-877b-3f42e8297b0d",
+          "ordinal": 4,
+          "name": "30R | DEP",
+          "template": "[FACILITY] DEP [ATIS_CODE] [TIME]\r\n[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         }
       ],
       "contractions": [
-        {
-          "variableName": "OMDB",
-          "text": "OMDB",
-          "voice": "DUBAI INTERNATIONAL AIRPORT"
-        },
-        {
-          "variableName": "WS",
-          "text": "WS",
-          "voice": "WINDSHEAR"
-        },
-        {
-          "variableName": "ZERO_ZERO_ZERO_DEGREES_ZERO_KNOT",
-          "text": "ZERO ZERO ZERO DEGREES, ZERO KNOT",
-          "voice": "CALM"
-        },
-        {
-          "variableName": "CAVOK",
-          "text": "CAVOK",
-          "voice": "CAV-OKAY"
-        },
         {
           "variableName": "ILS",
           "text": "ILS",
@@ -2000,11 +1984,6 @@
           "variableName": "LVO",
           "text": "LVO",
           "voice": "LOW VISIBILITY OPERATIONS"
-        },
-        {
-          "variableName": "E",
-          "text": "E",
-          "voice": "ECK-OH"
         },
         {
           "variableName": "FST",
@@ -2027,87 +2006,57 @@
           "voice": "MINIMUM"
         },
         {
-          "variableName": "T",
-          "text": "T",
-          "voice": "TEMPERATURE"
-        },
-        {
-          "variableName": "DP",
-          "text": "DP",
-          "voice": "DEW POINT"
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON DELIVERY 120. 35",
+          "text": "LVO ENFORCED.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON GROUND 118. 35",
-          "ordinal": 2,
+          "text": "A-CDM IN USE.",
+          "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON TOWER 118. 75",
+          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON DELIVERY 120. 35.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON DEPARTURES/ARRIVALS 124. 90",
+          "text": "DXB VFR FREQ 126. 775.",
           "ordinal": 4,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON RADAR 119. 30",
+          "text": "DEPARTURES MUST REMAIN ON TOWER FREQ AFTER TAKEOFF.",
           "ordinal": 5,
-          "enabled": false
-        },
-        {
-          "text": "LVO ENFORCED",
-          "ordinal": 6,
-          "enabled": false
-        },
-        {
-          "text": "DEPARTURES MUST REMAIN ON TOWER FREQ AFTER TAKEOFF\r\n",
-          "ordinal": 7,
-          "enabled": false
-        },
-        {
-          "text": "DXB VFR FREQ 126. 775",
-          "ordinal": 8,
-          "enabled": false
-        },
-        {
-          "text": "V-ACDM IN USE! UPDATE YOUR TOBT ON VACDM.VATSIM.ME",
-          "ordinal": 9,
           "enabled": false
         }
       ],
       "notamDefinitions": [
         {
-          "text": "RWY 30 LEFT CLSD",
-          "ordinal": 2,
-          "enabled": false
-        },
-        {
-          "text": "RWY 30 RIGHT CLSD",
-          "ordinal": 3,
-          "enabled": false
-        },
-        {
-          "text": "SINGLE RWY OPS IN PROG",
+          "text": "RWY 12 LEFT CLSD.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "RWY 12 LEFT CLSD",
-          "ordinal": 4,
+          "text": "RWY 12 RIGHT CLSD.",
+          "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "RWY 12 RIGHT CLSD",
-          "ordinal": 5,
+          "text": "RWY 30 RIGHT CLSD.",
+          "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "RWY 30 LEFT CLSD.",
+          "ordinal": 4,
           "enabled": false
         }
       ]
@@ -2137,31 +2086,31 @@
           },
           "standard": {
             "template": {
-              "text": "{wind_dir}{wind_spd}KT",
+              "text": "WIND {wind_dir} DEG. {wind_spd} KT.",
               "voice": "WIND {wind_dir} AT {wind_spd}"
             }
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
+              "text": "WIND {wind_dir} DEG. {wind_spd} KT. GUST {wind_gust} KT.",
               "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
+              "text": "WIND VRB{wind_spd}KT.",
               "voice": "WIND VARIABLE AT {wind_spd}"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
+              "text": "WIND VRB{wind_spd}G{wind_gust}KT.",
               "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
             }
           },
           "variableDirection": {
             "template": {
-              "text": "{wind_vmin}V{wind_vmax}",
+              "text": "{wind_vmin}V{wind_vmax}.",
               "voice": "WIND VARIABLE BETWEEN {wind_vmin} AND {wind_vmax}"
             }
           },
@@ -2187,7 +2136,7 @@
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
-            "text": "{visibility}",
+            "text": "VIS {visibility}",
             "voice": "VISIBILITY {visibility}"
           }
         },
@@ -4004,15 +3953,15 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "D {dewpoint}",
+            "text": "DP {dewpoint}",
             "voice": "DEWPOINT {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter|hpa}",
-            "voice": "QNH {altimeter|hpa}"
+            "text": "QNH {altimeter|hpa} HPA",
+            "voice": "QNH {altimeter|hpa} HPA"
           }
         },
         "transitionLevel": {
@@ -4031,8 +3980,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVS ATC COPIED {letter|word}.",
+            "voice": "ADVS ATC COPIED {letter|word}."
           }
         }
       },
@@ -4048,62 +3997,79 @@
       },
       "presets": [
         {
-          "id": "e040b6ad-b90b-4dbc-a81d-c46fae98c15c",
-          "name": "30L - NORTH-WEST CONFIG",
-          "template": "[FACILITY] ARR [ATIS_LETTER]. AT TIME [TIME]. EXP ILS APPROACHES. ARR RWY 30 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. ENHANCE WAKE TURB SEPARATION IN FORCE. MNM RWY OCCUPANCY REQUIRED. SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. CAUTION POSSIBLE GLIDE SLOPE FLUC. [ARPT_COND]. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "af4fb151-c90b-470f-8238-e2412de8d5f9",
-          "name": "30R - NORTH-WEST CONFIG",
-          "template": "[FACILITY] ARR [ATIS_LETTER]. AT TIME [TIME]. EXP ILS APPROACHES. ARR RWY 30 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. ENHANCE WAKE TURB SEPARATION IN FORCE. MNM RWY OCCUPANCY REQUIRED. SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. CAUTION POSSIBLE GLIDE SLOPE FLUC. [ARPT_COND]. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
           "id": "304d88c6-a89b-4631-bff2-55a779f60651",
-          "name": "12L - SOUTH-EAST CONFIG",
-          "template": "[FACILITY] ARR [ATIS_LETTER]. AT TIME [TIME]. EXP ILS APPROACHES. ARR RWY 12 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. ENHANCE WAKE TURB SEPARATION IN FORCE. MNM RWY OCCUPANCY REQUIRED. SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. CAUTION POSSIBLE GLIDE SLOPE FLUC. [ARPT_COND]. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].",
+          "ordinal": 1,
+          "name": "12L | ILS APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP ILS APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "676092e4-2fea-4cc3-8027-d1ad5c6b7a31",
+          "ordinal": 2,
+          "name": "12L | RNP APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP RNP APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
           "id": "bad8520e-1d21-495c-844f-f6f03d41175a",
-          "name": "12R - SOUTH-EAST CONFIG",
-          "template": "[FACILITY] ARR [ATIS_LETTER]. AT TIME [TIME]. EXP ILS APPROACHES. ARR RWY 12 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. ENHANCE WAKE TURB SEPARATION IN FORCE. MNM RWY OCCUPANCY REQUIRED. SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. CAUTION POSSIBLE GLIDE SLOPE FLUC. [ARPT_COND]. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].",
+          "ordinal": 3,
+          "name": "12R | ILS APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP ILS APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
-          "id": "3084d1b7-e72a-4709-9430-478f3e529c6a",
-          "name": "30L/R - NORTH-WEST CONFIG D-APO",
-          "template": "[FACILITY] ARR [ATIS_LETTER]. AT TIME [TIME]. EXP ILS APPROACHES. ARR RWY 30 LEFT AND 30 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. ENHANCE WAKE TURB SEPARATION IN FORCE. MNM RWY OCCUPANCY REQUIRED. SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. CAUTION POSSIBLE GLIDE SLOPE FLUC. DUAL RWY ARRS IN PROGRESS. [ARPT_COND]. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].",
+          "id": "58e877aa-e4af-4322-82a8-b26af7b4f232",
+          "ordinal": 4,
+          "name": "12R | RNP APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP RNP APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "e040b6ad-b90b-4dbc-a81d-c46fae98c15c",
+          "ordinal": 5,
+          "name": "30L | ILS APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "fc1dddc8-1d1f-429e-bd35-713dabb810f7",
+          "ordinal": 5,
+          "name": "30L | RNP APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "af4fb151-c90b-470f-8238-e2412de8d5f9",
+          "ordinal": 7,
+          "name": "30R | ILS APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP ILS APPROACHES.\r\nARR RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "123d4deb-4c56-40f9-b263-1eb789fe55ef",
+          "ordinal": 8,
+          "name": "30R | RNP APCH",
+          "template": "[FACILITY] ARR [ATIS_CODE] [TIME]\r\n[FACILITY] ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nEXP RNP APPROACHES.\r\nARR RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         }
       ],
       "contractions": [
-        {
-          "variableName": "OMDB",
-          "text": "OMDB",
-          "voice": "DUBAI INTERNATIONAL AIRPORT"
-        },
-        {
-          "variableName": "WS",
-          "text": "WS",
-          "voice": "WINDSHEAR"
-        },
-        {
-          "variableName": "ZERO_ZERO_ZERO_DEGREES_ZERO_KNOT",
-          "text": "ZERO ZERO ZERO DEGREES, ZERO KNOT",
-          "voice": "CALM"
-        },
         {
           "variableName": "ILS",
           "text": "ILS",
@@ -4113,11 +4079,6 @@
           "variableName": "LVO",
           "text": "LVO",
           "voice": "LOW VISIBILITY OPERATIONS"
-        },
-        {
-          "variableName": "E",
-          "text": "E",
-          "voice": "ECK-OH"
         },
         {
           "variableName": "FST",
@@ -4140,57 +4101,47 @@
           "voice": "MINIMUM"
         },
         {
-          "variableName": "CAVOK",
-          "text": "CAVOK",
-          "voice": "CAV-OKAY"
+          "variableName": "FLUC",
+          "text": "FLUC",
+          "voice": "FLUCTUATIONS"
         },
         {
-          "variableName": "T",
-          "text": "T",
-          "voice": "TEMPERATURE"
-        },
-        {
-          "variableName": "DP",
-          "text": "DP",
-          "voice": "DEW POINT"
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "LVO ENFORCED",
+          "text": "LVO ENFORCED.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "DXB VFR FREQ 126. 775",
+          "text": "DXB VFR FREQ 126. 775.",
           "ordinal": 2,
           "enabled": false
         }
       ],
       "notamDefinitions": [
         {
-          "text": "RWY 30 LEFT CLSD",
-          "ordinal": 2,
+          "text": "RWY 12 LEFT CLSD.",
+          "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "RWY 30 RIGHT CLSD\r\n",
+          "text": "RWY 12 RIGHT CLSD.",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "RWY 30 LEFT CLSD.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "RWY 12 LEFT CLSD",
+          "text": "RWY 30 RIGHT CLSD.",
           "ordinal": 4,
-          "enabled": false
-        },
-        {
-          "text": "RWY 12 RIGHT CLSD",
-          "ordinal": 5,
-          "enabled": false
-        },
-        {
-          "text": "SINGLE RWY OPS IN PROGRESS",
-          "ordinal": 1,
           "enabled": false
         }
       ]
@@ -4220,31 +4171,31 @@
           },
           "standard": {
             "template": {
-              "text": "{wind_dir}{wind_spd}KT",
+              "text": "WIND {wind_dir} DEG. {wind_spd} KT.",
               "voice": "WIND {wind_dir} AT {wind_spd}"
             }
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
+              "text": "WIND {wind_dir} DEG. {wind_spd} KT. GUST {wind_gust} KT.",
               "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
+              "text": "WIND VRB{wind_spd}KT.",
               "voice": "WIND VARIABLE AT {wind_spd}"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
+              "text": "WIND VRB{wind_spd}G{wind_gust}KT.",
               "voice": "WIND VARIABLE AT {wind_spd} GUSTS {wind_gust}"
             }
           },
           "variableDirection": {
             "template": {
-              "text": "{wind_vmin}V{wind_vmax}",
+              "text": "{wind_vmin}V{wind_vmax}.",
               "voice": "WIND VARIABLE BETWEEN {wind_vmin} AND {wind_vmax}"
             }
           },
@@ -4270,7 +4221,7 @@
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
-            "text": "{visibility}",
+            "text": "VIS {visibility}",
             "voice": "VISIBILITY {visibility}"
           }
         },
@@ -6087,15 +6038,15 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "D {dewpoint}",
+            "text": "DP {dewpoint}",
             "voice": "DEWPOINT {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter|hpa}",
-            "voice": "QNH {altimeter|hpa}"
+            "text": "QNH {altimeter|hpa} HPA",
+            "voice": "QNH {altimeter|hpa} HPA"
           }
         },
         "transitionLevel": {
@@ -6114,8 +6065,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ADVS ATC COPIED {letter|word}.",
+            "voice": "ADVS ATC COPIED {letter|word}."
           }
         }
       },
@@ -6131,83 +6082,115 @@
       },
       "presets": [
         {
-          "id": "0f0d0e9b-4b53-4d53-a5f2-269338ae852f",
-          "name": "30L/R - NORTH-WEST CONFIG",
-          "template": "[FACILITY] DEP AND ARR [ATIS_LETTER] AT TIME [TIME]. DEP RWY 30 RIGHT. ARR RWY 30 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ARRS SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. CAUTION POSSIBLE GLIDE SLOPE FLUC. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n\r\n\r\n",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "29d382ae-6926-41d8-bde8-6ed6ae38bfd7",
-          "name": "30L/R - NORTH-WEST CONFIG D-APO",
-          "template": "[FACILITY] DEP AND ARR [ATIS_LETTER] AT TIME [TIME]. DEP RWY 30 RIGHT. ARR RWY 30 LEFT AND 30 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ARRS SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. CAUTION POSSIBLE GLIDE SLOPE FLUC. DUAL RWY ARRS IN PROGRESS. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n\r\n\r\n",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "b050d2f6-26b1-4e47-9b0a-e032f8637909",
-          "name": "30L - NORTH-WEST CONFIG",
-          "template": "[FACILITY] DEP AND ARR [ATIS_LETTER] AT TIME [TIME]. DEP RWY 30 LEFT. ARR RWY 30 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ARRS SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. CAUTION POSSIBLE GLIDE SLOPE FLUC. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n\r\n\r\n",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "da68412b-75f2-4626-a473-aa34fdc03d7d",
-          "name": "30R - NORTH-WEST CONFIG",
-          "template": "[FACILITY] DEP AND ARR [ATIS_LETTER] AT TIME [TIME]. DEP RWY 30 RIGHT. ARR RWY 30 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ARRS SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. CAUTION POSSIBLE GLIDE SLOPE FLUC. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n\r\n\r\n",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
           "id": "f419058c-6def-4ada-9542-de994dfa3e1a",
-          "name": "12L - SOUTH-EAST CONFIG",
-          "template": "[FACILITY] DEP AND ARR [ATIS_LETTER] AT TIME [TIME]. DEP RWY 12 RIGHT. ARR RWY 12 RIGHT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ARRS SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. CAUTION POSSIBLE GLIDE SLOPE FLUC. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n\r\n\r\n",
+          "ordinal": 1,
+          "name": "12L | SRO | ILS APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "25b6b750-6cfd-4fa5-8c94-841359166aa1",
+          "ordinal": 2,
+          "name": "12L | SRO | RNP APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
           "id": "21e13042-ddf5-4175-8195-8c736d45f9ae",
-          "name": "12R - SOUTH-EAST CONFIG",
-          "template": "[FACILITY] DEP AND ARR [ATIS_LETTER] AT TIME [TIME]. DEP RWY 12 LEFT. ARR RWY 12 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ARRS SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. CAUTION POSSIBLE GLIDE SLOPE FLUC. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n\r\n\r\n",
+          "ordinal": 3,
+          "name": "12R | SRO | ILS APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "3e2e50dc-cbb9-4932-b9de-d086a7248596",
+          "ordinal": 3,
+          "name": "12R | SRO | RNP APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         },
         {
           "id": "1050ee08-a304-4e5c-af69-2a24f37d7cb9",
-          "name": "12L/R - SOUTH-EAST CONFIG",
-          "template": "[FACILITY] DEP AND ARR [ATIS_LETTER] AT TIME [TIME]. DEP RWY 12 RIGHT. ARR RWY 12 LEFT. SFC WIND [SURFACE_WIND]. VIS [VIS]. T [TEMP]. DP [DEW]. QNH [PRESSURE] HPA. [PRESENT_WX]. [CLOUDS]. ADZ ACFT TYPE ON FST CTC. [ARPT_COND]. DURING PUSHBACK.AND TAXI.SQUAWK ASSIGNED TRANSPONDER CODE. ARRS SQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND. ENHANCE WAKE TURB SEPARATION IN FORCE. ADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED. MNM RWY OCCUPANCY REQUIRED. CAUTION POSSIBLE GLIDE SLOPE FLUC. [NOTAMS]. ADVS ATC COPIED [ATIS_LETTER].\r\n\r\n\r\n",
+          "ordinal": 5,
+          "name": "DEP 12R | ARR 12L | ILS APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "d0add55f-03b2-4c65-a076-fd40e6240087",
+          "ordinal": 6,
+          "name": "DEP 12R | ARR 12L | RNP APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "f6199552-af40-4206-a41e-8f55279627ce",
+          "ordinal": 7,
+          "name": "30L | SRO | ILS APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "7d49b6f6-ba99-4f89-8586-75cdd8531a25",
+          "ordinal": 8,
+          "name": "30L | SRO | RNP APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "fbf6a231-57fe-43fb-87c7-5365aff58b89",
+          "ordinal": 9,
+          "name": "30R | SRO | ILS APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "5c25e310-827c-4f13-9a76-9fba8c5090f5",
+          "ordinal": 10,
+          "name": "30R | SRO | RNP APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "67825f40-6b67-458e-9bec-c0ac4011d87c",
+          "ordinal": 11,
+          "name": "DEP 30R | ARR 30L | ILS APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "0b21457f-f3da-412b-bcdc-67aa9b476e9d",
+          "ordinal": 12,
+          "name": "DEP 30R | ARR 30L | RNP APCH",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE] [TIME]\r\n[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
         }
       ],
       "contractions": [
-        {
-          "variableName": "OMDB",
-          "text": "OMDB",
-          "voice": "DUBAI INTERNATIONAL AIRPORT"
-        },
-        {
-          "variableName": "WS",
-          "text": "WS",
-          "voice": "WINDSHEAR"
-        },
-        {
-          "variableName": "ZERO_ZERO_ZERO_DEGREES_ZERO_KNOT",
-          "text": "ZERO ZERO ZERO DEGREES, ZERO KNOT",
-          "voice": "CALM"
-        },
-        {
-          "variableName": "CAVOK",
-          "text": "CAVOK",
-          "voice": "CAV-OKAY"
-        },
         {
           "variableName": "ILS",
           "text": "ILS",
@@ -6217,11 +6200,6 @@
           "variableName": "LVO",
           "text": "LVO",
           "voice": "LOW VISIBILITY OPERATIONS"
-        },
-        {
-          "variableName": "E",
-          "text": "E",
-          "voice": "ECK-OH"
         },
         {
           "variableName": "FST",
@@ -6244,87 +6222,57 @@
           "voice": "MINIMUM"
         },
         {
-          "variableName": "T",
-          "text": "T",
-          "voice": "TEMPERATURE"
-        },
-        {
-          "variableName": "DP",
-          "text": "DP",
-          "voice": "DEW POINT"
+          "variableName": "HPA",
+          "text": "HPA",
+          "voice": "HECTOPASCALS"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON DELIVERY 120. 35",
+          "text": "LVO ENFORCED.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON GROUND 118. 35",
+          "text": "A-CDM IN USE.",
           "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON TOWER 118. 75",
+          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON DELIVERY 120. 35.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON DEPARTURES/ARRIVALS 124. 90",
+          "text": "DEPARTURES MUST REMAIN ON TOWER FREQ AFTER TAKEOFF.",
           "ordinal": 4,
           "enabled": false
         },
         {
-          "text": "PILOTS MUST REPORT READY FOR PUSHBACK ON RADAR 132. 15",
+          "text": "DXB VFR FREQ 126. 775.",
           "ordinal": 5,
-          "enabled": false
-        },
-        {
-          "text": "LVO ENFORCED",
-          "ordinal": 6,
-          "enabled": false
-        },
-        {
-          "text": "DEPARTURES MUST REMAIN ON TOWER FREQ AFTER TAKEOFF",
-          "ordinal": 7,
-          "enabled": false
-        },
-        {
-          "text": "DXB VFR FREQ 126. 775",
-          "ordinal": 8,
-          "enabled": false
-        },
-        {
-          "text": "V-ACDM IN USE! UPDATE YOUR TOBT ON VACDM.VATSIM.ME",
-          "ordinal": 9,
           "enabled": false
         }
       ],
       "notamDefinitions": [
         {
-          "text": "SINGLE RWY OPS IN PROG\r\n",
+          "text": "RWY 12 LEFT CLSD.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "RWY 30 LEFT CLSD",
+          "text": "RWY 12 RIGHT CLSD.",
           "ordinal": 2,
           "enabled": false
         },
         {
-          "text": "RWY 30 RIGHT CLSD",
+          "text": "RWY 30 LEFT CLSD.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "RWY 12 LEFT CLSD",
+          "text": "RWY 30 RIGHT CLSD.",
           "ordinal": 4,
-          "enabled": false
-        },
-        {
-          "text": "RWY 12 RIGHT CLSD",
-          "ordinal": 5,
           "enabled": false
         }
       ]
