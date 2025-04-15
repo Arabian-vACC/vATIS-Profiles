@@ -1886,7 +1886,7 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{temp}",
+            "text": "T {temp}",
             "voice": "TEMPERATURE {temp}"
           }
         },
@@ -1894,15 +1894,15 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{dewpoint}",
+            "text": "D {dewpoint}",
             "voice": "DEWPOINT {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -3996,7 +3996,7 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{temp}",
+            "text": "T {temp}",
             "voice": "TEMPERATURE {temp}"
           }
         },
@@ -4004,15 +4004,15 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{dewpoint}",
+            "text": "D {dewpoint}",
             "voice": "DEWPOINT {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -6079,7 +6079,7 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{temp}",
+            "text": "T {temp}",
             "voice": "TEMPERATURE {temp}"
           }
         },
@@ -6087,15 +6087,15 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{dewpoint}",
+            "text": "D {dewpoint}",
             "voice": "DEWPOINT {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -14607,8 +14607,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -16610,8 +16610,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -18618,8 +18618,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -20601,8 +20601,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -22579,8 +22579,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "{altimeter}",
-            "voice": "QNH {altimeter}"
+            "text": "QNH {altimeter|hpa}",
+            "voice": "QNH {altimeter|hpa}"
           }
         },
         "transitionLevel": {
@@ -22599,8 +22599,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ON INITIAL CONTACT WITH ATC UNIT, PILOTS ARE REQUESTED TO ACKNOWLEDGE THE RECEIPT OF FUJAIRAH ATIS INFORMATION {letter|word}.",
+            "voice": "ON INITIAL CONTACT WITH ATC UNIT, PILOTS ARE REQUESTED TO ACKNOWLEDGE THE RECEIPT OF FUJAIRAH ATIS INFORMATION {letter|word}."
           }
         }
       },
@@ -22616,25 +22616,9 @@
       },
       "presets": [
         {
-          "id": "272b3f52-5c17-4e5e-84c5-154dc1d29adb",
-          "name": "11 - SOUTHEAST CONFIG",
-          "template": "FUJAIRAH ARPT ATIS INFORMATION [ATIS_CODE]. TIME [OBS_TIME]. LDG RUNWAY 11. DEP RWY 11. MET REPORT [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS]. OMFJ ATIS INFORMATION [ATIS_CODE]. ON INITIAL CONTACT WITH ATC UNIT, PILOTS ARE REQUESTED TO ACKNOWLEDGE THE RECEIPT OF ATIS FUJAIRAH ATIS INFORMATION [ATIS_CODE]",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
           "id": "454f5cba-3f4c-4257-865e-5c2ce3242006",
-          "name": "NIGHT CONFIG (1400-0230Z)",
-          "template": "FUJAIRAH ARPT ATIS INFORMATION [ATIS_CODE]. TIME [OBS_TIME]. LANDING RUNWAY 29. BACKTRACK AND DEP RWY 11. MET REPORT [FULL_WX_STRING]. [ARPT_COND]. [NOTAMS]. ON INITIAL CONTACT WITH ATC UNIT, PILOTS ARE REQUESTED TO ACKNOWLEDGE THE RECEIPT OF FUJAIRAH ATIS INFORMATION [ATIS_CODE].",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "b52fe765-d494-4c09-9d5b-ffd9d7d51bb4",
-          "name": "29 - NORTHWEST CONFIG",
-          "template": "",
+          "name": "DEP 11R | ARR 29L",
+          "template": "[FACILITY] ARPT ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. LANDING RWY 29L. BACKTRACK AND DEP RWY 11R. RWY 11L/29R CLOSED. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
