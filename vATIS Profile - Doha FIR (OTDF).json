@@ -1,5 +1,4 @@
 {
-  "version": 4,
   "name": "Doha (OTDF) 14 APR 2025",
   "id": "50c31ce4-e1e2-4774-ab4b-acebb937142f",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
@@ -1899,7 +1898,7 @@
           "id": "9d7c6f98-b528-46f9-b531-320e29f70e25",
           "ordinal": 1,
           "name": "16L | SRO |",
-          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 16L. ARRIVAL RUNWAY 16L. [NOTAMS]",
+          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 16L. ARRIVAL RUNWAY 16L. [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -1908,7 +1907,7 @@
           "id": "d0c92d92-2509-4a03-9a4c-8353b0536f9e",
           "ordinal": 1,
           "name": "16R | SRO |",
-          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 16R. ARRIVAL RUNWAY 16R. [NOTAMS]",
+          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 16R. ARRIVAL RUNWAY 16R. [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -1917,7 +1916,7 @@
           "id": "2f3481da-ac89-4be7-b142-ec172d834c30",
           "ordinal": 3,
           "name": "16L/R | DC |",
-          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 16L AND RUNWAY 16R. ARRIVAL RUNWAY 16L AND RUNWAY 16R. [NOTAMS]",
+          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 16L AND RUNWAY 16R. ARRIVAL RUNWAY 16L AND RUNWAY 16R. [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -1926,7 +1925,7 @@
           "id": "96e5e822-060f-4e82-a21d-cfbf62becf58",
           "ordinal": 4,
           "name": "34L | SRO |",
-          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 34L. ARRIVAL RUNWAY 34L. [NOTAMS]",
+          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 34L. ARRIVAL RUNWAY 34L. [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -1935,7 +1934,7 @@
           "id": "026dac3a-a855-4524-808e-61e4ad0aac67",
           "ordinal": 5,
           "name": "34R | SRO |",
-          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 34R. ARRIVAL RUNWAY 34R. [NOTAMS]",
+          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 34R. ARRIVAL RUNWAY 34R. [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -1944,7 +1943,7 @@
           "id": "65e0515c-882c-455b-8240-d9186f2e0eb7",
           "ordinal": 6,
           "name": "34L/R | DC |",
-          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 34L AND RUNWAY 34R. ARRIVAL RUNWAY 34L AND RUNWAY 34R. [NOTAMS]",
+          "template": "AL UDEID AIR BASE ATIS INFORMATION [ATIS_CODE] [OBS_TIME]. [FULL_WX_STRING]. [ARPT_COND] DEPARTURE RUNWAY 34L AND RUNWAY 34R. ARRIVAL RUNWAY 34L AND RUNWAY 34R. [NOTAMS] [CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -1966,12 +1965,12 @@
         {
           "text": "TRANSITING AIRCRAFT ADVISE PPR NUMBER UPON INITIAL CONTACT WITH AL UDEID TOWER.",
           "ordinal": 3,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "RUNWAY 16L DEPARTURE END BAK 1 2 CABLE OUT OF SERVICE.",
           "ordinal": 4,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "RUNWAY 16R DEPARTURE END BAK-12 CABLE OUT OF SERVICE.",
@@ -1991,7 +1990,7 @@
         {
           "text": "VHF AND UHF GUARD FREQUENCY 121.5 UNMONITORED, USE UHF 243.0 OR CONTACT AL UDEID TOWER ON VHF 125.500.",
           "ordinal": 8,
-          "enabled": true
+          "enabled": false
         },
         {
           "text": "AL UDEID ASDX OUT OF SERVICE, CALL GROUND WITH POSITION PRIOR TO TAXI.",
@@ -3924,7 +3923,7 @@
         "closingStatement": {
           "autoIncludeClosingStatement": false,
           "template": {
-            "text": "END OF ATIS {letter}",
+            "text": "END OF ATIS {letter|word}",
             "voice": "END OF ATIS {letter|word}"
           }
         }
@@ -3944,7 +3943,7 @@
           "id": "d80ff83a-bfeb-4f29-87c7-d03b1fc2dec7",
           "ordinal": 1,
           "name": "15 | ILS APCH |",
-          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 15. EXP ILS APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID]",
+          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 15. EXP ILS APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -3953,7 +3952,7 @@
           "id": "5b796208-9174-49a4-aafd-4989f6531a38",
           "ordinal": 1,
           "name": "15 | RNP APCH |",
-          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 15. EXP RNP APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID]",
+          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 15. EXP RNP APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -3962,7 +3961,7 @@
           "id": "d9798b52-444e-4215-a1b3-49ac56be7413",
           "ordinal": 3,
           "name": "33 | ILS APCH |",
-          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 33. EXP ILS APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID]",
+          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 33. EXP ILS APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -3971,7 +3970,7 @@
           "id": "52f2026e-1c9d-4620-b4c2-5389e8a3b524",
           "ordinal": 4,
           "name": "33 | RNP APCH |",
-          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 33. EXP RNP APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID]",
+          "template": "[FACILITY] DEP ARR ATIS [ID]\r\n[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 33. EXP RNP APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -5952,7 +5951,7 @@
           "id": "6478b8c4-fda5-48c4-ba77-6db14a7ddfed",
           "ordinal": 1,
           "name": "16L | SRO |",
-          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -5961,7 +5960,7 @@
           "id": "4915774b-0045-4b87-bfe0-158ab94de7c7",
           "ordinal": 2,
           "name": "16R | SRO |",
-          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -5970,7 +5969,7 @@
           "id": "de1ab6ba-a25d-4b16-949d-fc905a591da9",
           "ordinal": 3,
           "name": "16L/R | SRO |",
-          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT AND 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT AND 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -5979,7 +5978,7 @@
           "id": "54fefb70-1c25-4091-a0af-9c6a72b37b7e",
           "ordinal": 5,
           "name": "34L | SRO |",
-          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -5988,7 +5987,7 @@
           "id": "328030f9-2b88-44a9-a4af-f3f7ad48abe3",
           "ordinal": 6,
           "name": "34R | SRO |",
-          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -5997,7 +5996,7 @@
           "id": "9269f04b-03e1-40d4-ab7f-66b1cf210d1a",
           "ordinal": 6,
           "name": "34L/R | SRO |",
-          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT AND 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] DEP ATIS [ID].\r\n[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT AND 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -6037,7 +6036,18 @@
           "enabled": false
         }
       ],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "RWY 16L/34R CLSD.",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "RWY 16R/34L CLSD.",
+          "ordinal": 2,
+          "enabled": false
+        }
+      ]
     },
     {
       "id": "37e7318f-2d1f-4c05-9095-316e83b14e7a",
@@ -7978,7 +7988,7 @@
           "id": "1b4b2764-ce18-46ce-b5b6-4e3f53dde84e",
           "ordinal": 1,
           "name": "16L | ILS APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -7987,7 +7997,7 @@
           "id": "bde40d5d-5f80-451c-815b-6a64e4940782",
           "ordinal": 2,
           "name": "16L | RNP APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -7996,7 +8006,7 @@
           "id": "1c55bf7e-8281-46c9-add7-e2a892644fe0",
           "ordinal": 3,
           "name": "16R | ILS APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8005,7 +8015,7 @@
           "id": "14f645c9-4dd3-4e48-9274-d82f2018d9cb",
           "ordinal": 4,
           "name": "16R | RNP APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8014,7 +8024,7 @@
           "id": "0bb99895-5c20-4510-a6dd-09a1be814db9",
           "ordinal": 5,
           "name": "16L/R | ILS APCH | DC",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT AND EXP ILS APCH FOR 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT AND EXP ILS APCH FOR 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8023,7 +8033,7 @@
           "id": "fe8bb4eb-ba37-4a19-bfc7-6068f5343e54",
           "ordinal": 6,
           "name": "16L/R | RNP APCH | DC",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP RNP APCH FOR 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP RNP APCH FOR 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8032,7 +8042,7 @@
           "id": "9ad977ae-05b8-4819-909c-06f2aa4ebda1",
           "ordinal": 7,
           "name": "34L | ILS APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8041,7 +8051,7 @@
           "id": "7069fca2-1c02-4e6f-b937-73d4fd704aee",
           "ordinal": 8,
           "name": "34L | RNP APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8050,7 +8060,7 @@
           "id": "5881c90e-37fc-4f73-b7a2-cc1b2302c760",
           "ordinal": 9,
           "name": "34R | ILS APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8059,7 +8069,7 @@
           "id": "d15a29b3-a650-4b78-8748-3f85ee05a1a0",
           "ordinal": 9,
           "name": "34R | RNP APCH | SRO",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8068,7 +8078,7 @@
           "id": "94daa181-8d53-434c-9879-433c15319204",
           "ordinal": 11,
           "name": "34L/R | ILS APCH | DC",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP ILS APCH FOR 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP ILS APCH FOR 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8077,7 +8087,7 @@
           "id": "c6bdbee3-0e71-4e76-a61d-d98ae0d6857b",
           "ordinal": 12,
           "name": "34L/R | RNP APCH | DC",
-          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP APCH FOR 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\nEND OF ATIS [ID].",
+          "template": "[FACILITY] ARR ATIS [ID]\r\n[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP APCH FOR 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
           }
@@ -8122,7 +8132,19 @@
           "enabled": false
         }
       ],
-      "notamDefinitions": []
+      "notamDefinitions": [
+        {
+          "text": "RWY 16L/34R CLSD.",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "RWY 16R/34L CLSD.",
+          "ordinal": 2,
+          "enabled": false
+        }
+      ]
     }
-  ]
+  ],
+  "version": 4
 }
