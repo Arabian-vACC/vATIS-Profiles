@@ -2,7 +2,7 @@
   "name": "U.A.E (OMAE) 19 APR 2025",
   "id": "f297df70-3efa-4eeb-8633-2a6b47fdfd2a",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20U.A.E%20FIR%20(OMAE).json",
-  "updateSerial": 2025041901,
+  "updateSerial": 2025041902,
   "stations": [
     {
       "id": "391a0ce0-0599-4240-a2dc-83bd493bd4fe",
@@ -3982,8 +3982,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": true,
           "template": {
-            "text": "ADVS OMDW RCVD INFO {letter|word}.",
-            "voice": "ADVISE AL-MAKTOUM RCVD INFO {letter|word}."
+            "text": "ADVS ATC COPIED {letter|word}.",
+            "voice": "ADVISE ATC COPIED {letter|word}."
           }
         }
       },
