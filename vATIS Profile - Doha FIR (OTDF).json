@@ -1,8 +1,8 @@
 {
-  "name": "Doha (OTDF) 24 AUG 2025",
+  "name": "Doha (OTDF) 24.1 AUG 2025",
   "id": "50c31ce4-e1e2-4774-ab4b-acebb937142f",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
-  "updateSerial": 2025082401,
+  "updateSerial": 2025082402,
   "stations": [
     {
       "id": "8d408e3f-80dd-4713-9264-f28ffe18a202",
@@ -3943,8 +3943,8 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter|hpa}\r\nQFE {qfe|ELEVATION_FT}",
-            "voice": "QNH {altimeter|hpa} QFE {qfe|ELEVATION_FT}"
+            "text": "QNH {altimeter|hpa}\r\nQFE {qfe|37}",
+            "voice": "QNH {altimeter|hpa} QFE {qfe|37}"
           }
         },
         "trend": {
