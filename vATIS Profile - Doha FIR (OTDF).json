@@ -1,8 +1,8 @@
 {
-  "name": "Doha (OTDF) 19 APR 2025",
+  "name": "Doha (OTDF) 24 AUG 2025",
   "id": "50c31ce4-e1e2-4774-ab4b-acebb937142f",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
-  "updateSerial": 2025041901,
+  "updateSerial": 2025082401,
   "stations": [
     {
       "id": "8d408e3f-80dd-4713-9264-f28ffe18a202",
@@ -82,6 +82,12 @@
             "text": "{visibility}",
             "voice": "VISIBILITY {visibility}"
           }
+        },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
         },
         "presentWeather": {
           "presentWeatherTypes": {
@@ -1783,6 +1789,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -1862,6 +1874,22 @@
             "text": "A{altimeter} ({altimeter|text})",
             "voice": "ALTIMETER {altimeter}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -2083,6 +2111,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -3827,6 +3861,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -3903,9 +3943,25 @@
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter|hpa}",
-            "voice": "QNH {altimeter|hpa}"
+            "text": "QNH {altimeter|hpa}\r\nQFE {qfe|ELEVATION_FT}",
+            "voice": "QNH {altimeter|hpa} QFE {qfe|ELEVATION_FT}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -3943,36 +3999,60 @@
           "id": "d80ff83a-bfeb-4f29-87c7-d03b1fc2dec7",
           "ordinal": 1,
           "name": "15 | ILS APCH |",
-          "template": "[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 15. EXP ILS APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] COM ATIS [ID].\r\nRWY IN USE 15.\r\nEXP ILS APCH RWY 15.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "5b796208-9174-49a4-aafd-4989f6531a38",
           "ordinal": 1,
           "name": "15 | RNP APCH |",
-          "template": "[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 15. EXP RNP APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] COM ATIS [ID].\r\nRWY IN USE 15.\r\nEXP RNP APCH RWY 15.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 15 [SURFACE_WIND].\r\nVIS RWY 15 [VIS][RVR].\r\nCLD RWY 15 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "d9798b52-444e-4215-a1b3-49ac56be7413",
           "ordinal": 3,
           "name": "33 | ILS APCH |",
-          "template": "[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 33. EXP ILS APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] COM ATIS [ID].\r\nRWY IN USE 33.\r\nEXP ILS APCH RWY 33.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "52f2026e-1c9d-4620-b4c2-5389e8a3b524",
           "ordinal": 4,
           "name": "33 | RNP APCH |",
-          "template": "[TIME] [FACILITY] DEP ARR ATIS [ID].\r\nRWY IN USE 33. EXP RNP APCH.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] COM ATIS [ID].\r\nRWY IN USE 33.\r\nEXP RNP APCH RWY 33.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 33 [SURFACE_WIND].\r\nVIS RWY 33 [VIS][RVR].\r\nCLD RWY 33 [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -4091,6 +4171,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -5835,6 +5921,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -5915,6 +6007,22 @@
             "voice": "QNH {altimeter|hpa}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -5953,7 +6061,13 @@
           "name": "16L | SRO |",
           "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
@@ -5996,6 +6110,7 @@
           "id": "9269f04b-03e1-40d4-ab7f-66b1cf210d1a",
           "ordinal": 6,
           "name": "34L/R | DC |",
+          "airportConditions": "",
           "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT AND 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
@@ -6128,6 +6243,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -7872,6 +7993,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -7952,6 +8079,22 @@
             "voice": "QNH {altimeter|hpa}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -7988,108 +8131,180 @@
           "id": "1b4b2764-ce18-46ce-b5b6-4e3f53dde84e",
           "ordinal": 1,
           "name": "16L | ILS APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "bde40d5d-5f80-451c-815b-6a64e4940782",
           "ordinal": 2,
           "name": "16L | RNP APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\nCLD RWY 16L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "1c55bf7e-8281-46c9-add7-e2a892644fe0",
           "ordinal": 3,
           "name": "16R | ILS APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "14f645c9-4dd3-4e48-9274-d82f2018d9cb",
           "ordinal": 4,
           "name": "16R | RNP APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16R [VIS] [RVR].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "0bb99895-5c20-4510-a6dd-09a1be814db9",
           "ordinal": 5,
           "name": "16L/R | ILS APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT AND EXP ILS APCH FOR 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 16 LEFT AND EXP ILS APCH FOR 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "fe8bb4eb-ba37-4a19-bfc7-6068f5343e54",
           "ordinal": 6,
           "name": "16L/R | RNP APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP RNP APCH FOR 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP RNP APCH FOR 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\nCLD RWY 16L [CLOUDS].\r\nCLD RWY 16R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "9ad977ae-05b8-4819-909c-06f2aa4ebda1",
           "ordinal": 7,
           "name": "34L | ILS APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "7069fca2-1c02-4e6f-b937-73d4fd704aee",
           "ordinal": 8,
           "name": "34L | RNP APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "5881c90e-37fc-4f73-b7a2-cc1b2302c760",
           "ordinal": 9,
           "name": "34R | ILS APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "d15a29b3-a650-4b78-8748-3f85ee05a1a0",
           "ordinal": 9,
           "name": "34R | RNP APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "94daa181-8d53-434c-9879-433c15319204",
           "ordinal": 11,
           "name": "34L/R | ILS APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP ILS APCH FOR 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP ILS APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "c6bdbee3-0e71-4e76-a61d-d98ae0d6857b",
           "ordinal": 12,
           "name": "34L/R | RNP APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP APCH FOR 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\nCLD RWY 34L [CLOUDS].\r\nCLD RWY 34R [CLOUDS].\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
