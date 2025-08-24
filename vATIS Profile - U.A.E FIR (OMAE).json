@@ -1,8 +1,8 @@
 {
-  "name": "U.A.E (OMAE) 19.1 APR 2025",
+  "name": "U.A.E (OMAE) 24 AUG 2025",
   "id": "f297df70-3efa-4eeb-8633-2a6b47fdfd2a",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20U.A.E%20FIR%20(OMAE).json",
-  "updateSerial": 2025041902,
+  "updateSerial": 2025082401,
   "stations": [
     {
       "id": "391a0ce0-0599-4240-a2dc-83bd493bd4fe",
@@ -82,6 +82,12 @@
             "text": "VIS {visibility}",
             "voice": "VISIBILITY {visibility}"
           }
+        },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
         },
         "presentWeather": {
           "presentWeatherTypes": {
@@ -1827,6 +1833,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -1907,6 +1919,22 @@
             "voice": "QNH {altimeter|hpa}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -1943,36 +1971,60 @@
           "id": "7254f3d9-be0d-4f77-b5c0-4a754f323463",
           "ordinal": 1,
           "name": "12L | DEP",
-          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "ff60aa58-f82e-42fc-a17a-52fcf8280d7f",
           "ordinal": 2,
           "name": "12R | DEP",
-          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "fc65ef36-d538-4362-81d4-15faff6c5216",
           "ordinal": 2,
           "name": "30L | DEP",
-          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "3055ea9b-65ab-42e9-877b-3f42e8297b0d",
           "ordinal": 4,
           "name": "30R | DEP",
-          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -2142,6 +2194,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -3886,6 +3944,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -3965,6 +4029,22 @@
             "text": "QNH {altimeter|hpa} HPA",
             "voice": "QNH {altimeter|hpa} HPA"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -4227,6 +4307,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -5971,6 +6057,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -6051,6 +6143,22 @@
             "voice": "QNH {altimeter|hpa} HPA"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -6087,108 +6195,180 @@
           "id": "f419058c-6def-4ada-9542-de994dfa3e1a",
           "ordinal": 1,
           "name": "12L | SRO | ILS APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "25b6b750-6cfd-4fa5-8c94-841359166aa1",
           "ordinal": 2,
           "name": "12L | SRO | RNP APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 LEFT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "21e13042-ddf5-4175-8195-8c736d45f9ae",
           "ordinal": 3,
           "name": "12R | SRO | ILS APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "3e2e50dc-cbb9-4932-b9de-d086a7248596",
           "ordinal": 3,
           "name": "12R | SRO | RNP APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "1050ee08-a304-4e5c-af69-2a24f37d7cb9",
           "ordinal": 5,
           "name": "DEP 12R | ARR 12L | ILS APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "d0add55f-03b2-4c65-a076-fd40e6240087",
           "ordinal": 6,
           "name": "DEP 12R | ARR 12L | RNP APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 12 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 12 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "f6199552-af40-4206-a41e-8f55279627ce",
           "ordinal": 7,
           "name": "30L | SRO | ILS APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "7d49b6f6-ba99-4f89-8586-75cdd8531a25",
           "ordinal": 8,
           "name": "30L | SRO | RNP APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 LEFT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "fbf6a231-57fe-43fb-87c7-5365aff58b89",
           "ordinal": 9,
           "name": "30R | SRO | ILS APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "5c25e310-827c-4f13-9a76-9fba8c5090f5",
           "ordinal": 10,
           "name": "30R | SRO | RNP APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "67825f40-6b67-458e-9bec-c0ac4011d87c",
           "ordinal": 11,
           "name": "DEP 30R | ARR 30L | ILS APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP ILS APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "0b21457f-f3da-412b-bcdc-67aa9b476e9d",
           "ordinal": 12,
           "name": "DEP 30R | ARR 30L | RNP APCH",
-          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
+          "template": "[FACILITY] DEP ARR [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nEXP RNP APPROACHES.\r\nARR RWY 30 LEFT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI\r\nBEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\nSQUAWK ASSIGNED TRANSPONDER CODE UNTIL ON STAND.\r\nCAUTION POSSIBLE GLIDE SLOPE FLUC.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -6358,6 +6538,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -8102,6 +8288,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -8181,6 +8373,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -8445,6 +8653,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -10189,6 +10403,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -10268,6 +10488,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -10622,6 +10858,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -12366,6 +12608,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -12445,6 +12693,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -12737,6 +13001,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -14481,6 +14751,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -14560,6 +14836,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -14753,6 +15045,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -16497,6 +16795,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -16576,6 +16880,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -16766,6 +17086,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -18510,6 +18836,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -18589,6 +18921,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -18730,6 +19078,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -20474,6 +20828,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -20535,7 +20895,7 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{temp}",
+            "text": "T {temp}",
             "voice": "TEMPERATURE {temp}"
           }
         },
@@ -20543,16 +20903,32 @@
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{dewpoint}",
+            "text": "DP {dewpoint}",
             "voice": "DEWPOINT {dewpoint}"
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter|hpa}",
-            "voice": "QNH {altimeter|hpa}"
+            "text": "QNH {altimeter|hpa}\r\nQNH {altimeter|inhg}",
+            "voice": "QNH {altimeter|hpa} QNH {altimeter|inhg}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -20589,17 +20965,29 @@
         {
           "id": "870e9e52-2a22-467d-801e-e2c32f6d75a9",
           "name": "01 | SRO",
-          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RWY 01 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
+          "template": "[FACILITY] COM ATIS [ATIS_CODE]\r\n[TIME]\r\nATIS [ATIS_CODE]\r\n/ LDG 01\r\nTKOF 01\r\n[WIND]\r\n[VIS]\r\n[CLOUDS]\r\n[TEMP] / [DEW]\r\n[PRESSURE]\r\n[NOTAMS]\r\nEND OF ATIS [ATIS_CODE]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         },
         {
           "id": "c8cb6cfd-4287-4066-a767-ec121c846255",
           "name": "19 | SRO",
-          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. TIME [TIME]. RWY 19 IN USE. MET REPORT [FULL_WX_STRING] [ARPT_COND] [NOTAMS] [CLOSING]",
+          "template": "[FACILITY] COM ATIS [ATIS_CODE]\r\n[TIME]\r\nATIS [ATIS_CODE]\r\n/ LDG 19\r\nTKOF 19\r\n[WIND]\r\n[VIS]\r\n[CLOUDS]\r\n[TEMP] / [DEW]\r\n[PRESSURE]\r\n[NOTAMS]\r\nEND OF ATIS [ATIS_CODE]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -20708,6 +21096,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -22452,6 +22846,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -22531,6 +22931,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -22702,6 +23118,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -24402,6 +24824,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -24482,6 +24910,22 @@
             "voice": "ALTIMETER {altimeter}"
           }
         },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
+        },
         "transitionLevel": {
           "values": [],
           "template": {
@@ -24538,7 +24982,7 @@
         {
           "text": "VFR AIRSPACE TRANSIT AIRCRAFT CONTACT MINHAD TOWER PRIOR TO EMIRATES INTERSECTION. CYCLE TRACK ROUNDABOUT OR GREEN COMMUNITY VRP.",
           "ordinal": 0,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "RUNWAY 09 ARRIVAL END CABLE PAK 12 OUT OF SERVICE.",
@@ -24548,17 +24992,17 @@
         {
           "text": "RUNWAY 27 ARRIVAL END CABLE PAK 12 OUT OF SERVICE.",
           "ordinal": 3,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "FULL STOP TRANSITING AIRCRAFT ADVISE PPR NUMBER ON INITIAL CONTACT WITH MINHAD TOWER.",
           "ordinal": 4,
-          "enabled": false
+          "enabled": true
         },
         {
           "text": "MINHAD TACTICAL AIRSPACE HOT CONTACT MINHAD TOWER FOR AIRSPACE ENTRY.",
           "ordinal": 5,
-          "enabled": false
+          "enabled": true
         }
       ]
     },
@@ -24641,6 +25085,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -26341,6 +26791,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -26420,6 +26876,22 @@
             "text": "A{altimeter} ({altimeter|text})",
             "voice": "ALTIMETER {altimeter}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -26590,6 +27062,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -28334,6 +28812,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -28413,6 +28897,22 @@
             "text": "QNH {altimeter|hpa}",
             "voice": "QNH {altimeter|hpa}"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
@@ -28583,6 +29083,12 @@
             "voice": "VISIBILITY {visibility}"
           }
         },
+        "runwayVisualRange": {
+          "neutralTendency": "Neutral",
+          "goingUpTendency": "Going Up",
+          "goingDownTendency": "Going Down",
+          "template": {}
+        },
         "presentWeather": {
           "presentWeatherTypes": {
             "-DS": {
@@ -30327,6 +30833,12 @@
         },
         "clouds": {
           "identifyCeilingLayer": true,
+          "identifyCeilingLayerTextAtis": false,
+          "textAtisCeilingPrefix": "CIG",
+          "cloudCeilingLayerTypes": [
+            "BKN",
+            "OVC"
+          ],
           "convertToMetric": false,
           "isAltitudeInHundreds": false,
           "undeterminedLayerAltitude": {
@@ -30406,6 +30918,22 @@
             "text": "QNH {altimeter|hpa} HPA",
             "voice": "QNH {altimeter|hpa} HPA"
           }
+        },
+        "trend": {
+          "nosigText": "NOSIG",
+          "nosigVoice": "No Significant Changes",
+          "becomingText": "BECMG",
+          "becomingVoice": "Becoming",
+          "temporaryText": "TEMPO",
+          "temporaryVoice": "Temporary",
+          "template": {}
+        },
+        "windShear": {
+          "runwayText": "WS R{Runway}",
+          "runwayVoice": "Wind Shear Runway {Runway}",
+          "allRunwayText": "WS ALL RWY",
+          "allRunwayVoice": "Wind Shear All Runways",
+          "template": {}
         },
         "transitionLevel": {
           "values": [],
