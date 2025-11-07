@@ -1,8 +1,8 @@
 {
-  "name": "Doha (OTDF) 28 OCT 2025",
-  "id": "9f6a982b-68d4-42ef-88f4-8b412746b4d2",
+  "name": "Doha (OTDF) 07 NOV 2025",
+  "id": "60f5e0c8-6e96-4d01-b496-9e53aeacb3fb",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
-  "updateSerial": 2025102901,
+  "updateSerial": 2025110701,
   "stations": [
     {
       "id": "8d408e3f-80dd-4713-9264-f28ffe18a202",
@@ -6196,6 +6196,11 @@
           "text": "DEPARTURES TO EXPECT FREQ 119 DECIMAL 725 ON TRANSFER.",
           "ordinal": 3,
           "enabled": false
+        },
+        {
+          "text": "TWY B CLSD BTN A2 AND A. TWY A1 AND TWY A CLSD.",
+          "ordinal": 4,
+          "enabled": true
         }
       ]
     },
@@ -8283,25 +8288,10 @@
           }
         },
         {
-          "id": "5881c90e-37fc-4f73-b7a2-cc1b2302c760",
-          "ordinal": 9,
-          "name": "34R | ILS APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
-          "externalGenerator": {
-            "enabled": false,
-            "textUrl": "",
-            "voiceUrl": "",
-            "arrival": "",
-            "departure": "",
-            "approaches": "",
-            "remarks": ""
-          }
-        },
-        {
           "id": "d15a29b3-a650-4b78-8748-3f85ee05a1a0",
           "ordinal": 9,
-          "name": "34R | RNP APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "name": "34R | RNP T APCH | SRO",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP T APCH FOR RWY IN USE 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8315,8 +8305,8 @@
         {
           "id": "94daa181-8d53-434c-9879-433c15319204",
           "ordinal": 11,
-          "name": "34L/R | ILS APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP ILS APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "name": "34L/R | ILS/RNP T APCH | DC",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP RNP T APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8330,8 +8320,8 @@
         {
           "id": "c6bdbee3-0e71-4e76-a61d-d98ae0d6857b",
           "ordinal": 12,
-          "name": "34L/R | RNP APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "name": "34L/R | RNP/RNP T APCH | DC",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP T APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
