@@ -6032,8 +6032,8 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "text": "{notams}",
+            "voice": " {notams}"
           }
         },
         "closingStatement": {
@@ -6135,6 +6135,7 @@
           "ordinal": 6,
           "name": "34L/R | DC |",
           "airportConditions": "",
+          "notams": "",
           "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT AND 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -6198,8 +6199,13 @@
           "enabled": false
         },
         {
-          "text": "TWY B CLSD BTN A2 AND A. TWY A1 AND TWY A CLSD.",
+          "text": "WORKS IN PROGRESS S OF THR 34R.\r\nRWY 34 R DISPLACED THR 580 M.",
           "ordinal": 4,
+          "enabled": true
+        },
+        {
+          "text": "RRSM SUSPENDED RWY 34 R.",
+          "ordinal": 5,
           "enabled": true
         }
       ]
@@ -8144,8 +8150,8 @@
         },
         "notams": {
           "template": {
-            "text": "NOTAMS... {notams}",
-            "voice": "NOTICES TO AIR MISSIONS: {notams}"
+            "text": " {notams}",
+            "voice": " {notams}"
           }
         },
         "closingStatement": {
@@ -8382,6 +8388,21 @@
           "text": "RWY 16R AND RWY 34L UNAVAILABLE.",
           "ordinal": 2,
           "enabled": false
+        },
+        {
+          "text": "WORKS IN PROGRESS S OF THR 34R.\r\nRWY 34 R DISPLACED THR 580 M.",
+          "ordinal": 3,
+          "enabled": true
+        },
+        {
+          "text": "ILS RWY 34 R UNAVAILABLE,,, EXP RNP T.",
+          "ordinal": 4,
+          "enabled": true
+        },
+        {
+          "text": "RRSM SUSPENDED RWY 34 R.",
+          "ordinal": 4,
+          "enabled": true
         }
       ]
     }
