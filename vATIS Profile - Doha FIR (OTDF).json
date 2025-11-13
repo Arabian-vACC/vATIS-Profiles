@@ -1,8 +1,8 @@
 {
-  "name": "Doha (OTDF) 12 NOV 2025",
+  "name": "Doha (OTDF) 13 NOV 2025",
   "id": "60f5e0c8-6e96-4d01-b496-9e53aeacb3fb",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
-  "updateSerial": 2025111201,
+  "updateSerial": 2025111301,
   "stations": [
     {
       "id": "8d408e3f-80dd-4713-9264-f28ffe18a202",
@@ -6059,7 +6059,7 @@
           "id": "6478b8c4-fda5-48c4-ba77-6db14a7ddfed",
           "ordinal": 1,
           "name": "16L | SRO |",
-          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRRSM SUSPENDED RWY 16L.\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6089,7 +6089,7 @@
           "id": "de1ab6ba-a25d-4b16-949d-fc905a591da9",
           "ordinal": 3,
           "name": "16L/R | DC |",
-          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT AND 16 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 16 LEFT AND 16 RIGHT.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRRSM SUSPENDED RWY 16L.\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6119,7 +6119,7 @@
           "id": "328030f9-2b88-44a9-a4af-f3f7ad48abe3",
           "ordinal": 6,
           "name": "34R | SRO |",
-          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 RIGHT.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRRSM SUSPENDED RWY 34R.\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6136,7 +6136,7 @@
           "name": "34L/R | DC |",
           "airportConditions": "",
           "notams": "",
-          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT AND 34 RIGHT.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] DEP ATIS [ID].\r\nRWY IN USE 34 LEFT AND 34 RIGHT.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRRSM SUSPENDED RWY 34R.\r\n[NOTAMS]\r\nCAUTION CROSSWIND.\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -6163,6 +6163,26 @@
           "variableName": "LVP",
           "text": "LVP",
           "voice": "LOW VISIBILITY PROCEDURES"
+        },
+        {
+          "variableName": "34R",
+          "text": "34R",
+          "voice": "THREE FOUR RIGHT"
+        },
+        {
+          "variableName": "34L",
+          "text": "34L",
+          "voice": "THREE FOUR LEFT"
+        },
+        {
+          "variableName": "16L",
+          "text": "16L",
+          "voice": "ONE SIX LEFT"
+        },
+        {
+          "variableName": "16R",
+          "text": "16R",
+          "voice": "ONE SIX RIGHT"
         }
       ],
       "airportConditionDefinitions": [
@@ -6202,16 +6222,6 @@
           "text": "DEPARTURES TO EXPECT FREQ 119 DECIMAL 725 ON TRANSFER.",
           "ordinal": 3,
           "enabled": false
-        },
-        {
-          "text": "WORKS IN PROGRESS S OF THR 34R.\r\nRWY 34 R DISPLACED THR 580 M.",
-          "ordinal": 4,
-          "enabled": true
-        },
-        {
-          "text": "RRSM SUSPENDED RWY 34 R.",
-          "ordinal": 5,
-          "enabled": true
         }
       ]
     },
@@ -8182,7 +8192,7 @@
           "id": "bde40d5d-5f80-451c-815b-6a64e4940782",
           "ordinal": 2,
           "name": "16L | RNP APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nILS RWY 16L UNAVAILABLE,,, EXP RNP.\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRWY 16L LAST EXIT TWY A 2\r\nILS RWY 16L UNAVAILABLE,,, EXP RNP.\r\nRRSM SUSPENDED RWY 16L.\r\n[NOTAMS]\r\nWIND RWY 16L [SURFACE_WIND].\r\nVIS RWY 16L [VIS] [RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8227,7 +8237,7 @@
           "id": "0bb99895-5c20-4510-a6dd-09a1be814db9",
           "ordinal": 5,
           "name": "16L/R | RNP/ILS APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP ILS APCH FOR 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nILS RWY 16L UNAVAILABLE,,, EXP RNP.\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP ILS APCH FOR 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRWY 16L LAST EXIT TWY A 2.\r\nILS RWY 16L UNAVAILABLE,,, EXP RNP.\r\nRRSM SUSPENDED RWY 16L.\r\n[NOTAMS]\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8242,7 +8252,7 @@
           "id": "fe8bb4eb-ba37-4a19-bfc7-6068f5343e54",
           "ordinal": 6,
           "name": "16L/R | RNP APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP RNP APCH FOR 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 16 LEFT AND EXP RNP APCH FOR 16 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRWY 16L LAST EXIT TWY A 2.\r\nILS RWY 16L UNAVAILABLE,,, EXP RNP.\r\nRRSM SUSPENDED RWY 16L.\r\n[NOTAMS]\r\nWIND RWY 16L [SURFACE_WIND].\r\nWIND RWY 16R [SURFACE_WIND].\r\nVIS RWY 16L [VIS][RVR].\r\nVIS RWY 16R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8287,7 +8297,7 @@
           "id": "d15a29b3-a650-4b78-8748-3f85ee05a1a0",
           "ordinal": 9,
           "name": "34R | RNP T APCH | SRO",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP T APCH FOR RWY IN USE 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP T APCH FOR RWY IN USE 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRWY 34R DISPLACED THR 580 M.\r\nILS RWY 34R UNAVAILABLE,,, EXP RNP T.\r\nRRSM SUSPENDED RWY 34R.\r\n[NOTAMS]\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8302,7 +8312,7 @@
           "id": "94daa181-8d53-434c-9879-433c15319204",
           "ordinal": 11,
           "name": "34L/R | ILS/RNP T APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP RNP T APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP ILS APCH FOR RWY IN USE 34 LEFT AND EXP RNP T APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRWY 34R DISPLACED THR 580 M.\r\nILS RWY 34R UNAVAILABLE,,, EXP RNP T.\r\nRRSM SUSPENDED RWY 34R.\r\n[NOTAMS]\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8317,7 +8327,7 @@
           "id": "c6bdbee3-0e71-4e76-a61d-d98ae0d6857b",
           "ordinal": 12,
           "name": "34L/R | RNP/RNP T APCH | DC",
-          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP T APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\n[NOTAMS]\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
+          "template": "[TIME] [FACILITY] ARR ATIS [ID].\r\nEXP RNP APCH FOR RWY IN USE 34 LEFT AND EXP RNP T APCH FOR 34 RIGHT.\r\nPOSSIBLE GPS INTERFERENCE. ADVISE ATC IMMEDIATELY IF ANY ANOMALIES ARE EXPERIENCED.\r\n[ARPT_COND]\r\nWORKS IN PROGRESS S OF THR 34R.\r\nRWY 34R DISPLACED THR 580 M.\r\nILS RWY 34R UNAVAILABLE,,, EXP RNP T.\r\nRRSM SUSPENDED RWY 34R.\r\n[NOTAMS]\r\nWIND RWY 34L [SURFACE_WIND].\r\nWIND RWY 34R [SURFACE_WIND].\r\nVIS RWY 34L [VIS][RVR].\r\nVIS RWY 34R [VIS][RVR].\r\n[CLOUDS]\r\n[TEMP] [DEW].\r\n[PRESSURE].\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8354,6 +8364,26 @@
           "variableName": "LVP",
           "text": "LVP",
           "voice": "LOW VISIBILITY PROCEDURES"
+        },
+        {
+          "variableName": "34R",
+          "text": "34R",
+          "voice": "THREE FOUR RIGHT"
+        },
+        {
+          "variableName": "34L",
+          "text": "34L",
+          "voice": "THREE FOUR  LEFT"
+        },
+        {
+          "variableName": "16L",
+          "text": "16L",
+          "voice": "ONE SIX LEFT"
+        },
+        {
+          "variableName": "16R",
+          "text": "16R",
+          "voice": "ONE SIX RIGHT"
         }
       ],
       "airportConditionDefinitions": [
@@ -8383,21 +8413,6 @@
           "text": "RWY 16R AND RWY 34L UNAVAILABLE.",
           "ordinal": 2,
           "enabled": false
-        },
-        {
-          "text": "WORKS IN PROGRESS S OF THR 34R.\r\nRWY 34 R DISPLACED THR 580 M.",
-          "ordinal": 3,
-          "enabled": true
-        },
-        {
-          "text": "ILS RWY 34 R UNAVAILABLE,,, EXP RNP T.",
-          "ordinal": 4,
-          "enabled": true
-        },
-        {
-          "text": "RRSM SUSPENDED RWY 34 R.",
-          "ordinal": 4,
-          "enabled": true
         }
       ]
     }
