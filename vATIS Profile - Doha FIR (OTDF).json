@@ -1,8 +1,8 @@
 {
-  "name": "Doha (OTDF) 13 NOV 2025",
+  "name": "Doha (OTDF) 27 NOV 2025",
   "id": "60f5e0c8-6e96-4d01-b496-9e53aeacb3fb",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20Doha%20FIR%20(OTDF).json",
-  "updateSerial": 2025111301,
+  "updateSerial": 2025112701,
   "stations": [
     {
       "id": "8d408e3f-80dd-4713-9264-f28ffe18a202",
@@ -6192,7 +6192,7 @@
           "enabled": false
         },
         {
-          "text": "HIRO IN FORCE.",
+          "text": "HIGH INTENSITY RUNWAY OPERATION SUSPENDED.",
           "ordinal": 2,
           "enabled": false
         },
@@ -8388,7 +8388,7 @@
       ],
       "airportConditionDefinitions": [
         {
-          "text": "HIRO IN FORCE.",
+          "text": "HIGH INTENSITY RUNWAY OPERATION SUSPENDED",
           "ordinal": 1,
           "enabled": false
         },
