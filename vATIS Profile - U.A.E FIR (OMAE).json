@@ -1,8 +1,8 @@
 {
-  "name": "U.A.E (OMAE) 28 OCT 2025",
-  "id": "99c6b8a8-1d67-4418-a3e2-b51b2eb2f5d0",
+  "name": "U.A.E (OMAE) 05 DEC 2025",
+  "id": "8e9d6303-fbc3-4360-b193-31517ed758c9",
   "updateUrl": "https://raw.githubusercontent.com/Arabian-vACC/vATIS-Profiles/refs/heads/main/vATIS%20Profile%20-%20U.A.E%20FIR%20(OMAE).json",
-  "updateSerial": 2025102901,
+  "updateSerial": 2025120501,
   "stations": [
     {
       "id": "391a0ce0-0599-4240-a2dc-83bd493bd4fe",
@@ -2016,6 +2016,8 @@
           "id": "3055ea9b-65ab-42e9-877b-3f42e8297b0d",
           "ordinal": 4,
           "name": "30R | DEP",
+          "airportConditions": "",
+          "notams": "",
           "template": "[FACILITY] DEP [ATIS_CODE].\r\nAT TIME [TIME].\r\nDEP RWY 30 RIGHT.\r\nSFC [WIND]\r\n[VIS][RVR]\r\n[CLOUDS]\r\n[TEMP]\r\n[DEW]\r\n[PRESSURE]\r\n[TREND]\r\nADZ ACFT TYPE ON FST CTC.\r\n[ARPT_COND]\r\nDURING PUSHBACK AND TAXI SQUAWK ASSIGNED TRANSPONDER CODE.\r\nMNM RWY OCCUPANCY REQUIRED.\r\nAFCT ON TWY M AND N ARE NOT PERMITTED TO TAXI BEHIND AFCT HLDG AT ANY RWY HLDG POINT.\r\nENHANCE WAKE TURB SEPARATION IN FORCE.\r\nADZ ATC PRIOR TO ENTERING RWY IF ADDITIONAL WAKE TURB SEPARATION IS REQUIRED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false,
@@ -8453,6 +8455,7 @@
           "id": "c9036197-8eb1-443b-8af1-5f7234492a05",
           "ordinal": 4,
           "name": "31L | SRO",
+          "airportConditions": "",
           "template": "[FACILITY] DEP [ATIS_LETTER]\r\n[TIME]\r\nDEP 31L.\r\n[ARPT_COND]\r\nWIND [SURFACE_WIND]\r\n[VIS]\r\n[TEMP] / [DEW]\r\n[PRESSURE]\r\n[CLOUDS]\r\nMINIMIZE RWY OCCUPANCY TIMES. INFORM ATC IF NOT PBN RNAV 1 GNASS EQUIPPED.\r\n[NOTAMS]\r\n[CLOSING]",
           "externalGenerator": {
             "enabled": false
@@ -8568,6 +8571,11 @@
         {
           "text": "CONTACT CLR DELIVERY WHEN READY FOR PUSH AND START ON FREQ 1 2 5. 1.",
           "ordinal": 3,
+          "enabled": false
+        },
+        {
+          "text": "PARALLEL RWY OPS IN PROGRESS",
+          "ordinal": 4,
           "enabled": false
         }
       ],
@@ -10793,6 +10801,11 @@
         {
           "text": "LVO ENFORCED.\r\n",
           "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "PARALLEL RWY OPS IN PROGRESS",
+          "ordinal": 2,
           "enabled": false
         }
       ],
