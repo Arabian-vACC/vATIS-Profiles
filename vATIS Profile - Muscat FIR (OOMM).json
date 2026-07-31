@@ -1950,6 +1950,60 @@
           "externalGenerator": {
             "enabled": false
           }
+        },
+        {
+          "id": "f1c3e0a2-4d5b-4e7f-8c6b-9f1e2d3a4b5c",
+          "ordinal": 7,
+          "name": "08R | ILS APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE] AT TIME [TIME]. EXP ILS APP. LDG DEP RWY 08R. RNP 08R AVAILABLE ON REQUEST. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "e1f2d3c4-5b6a-7e8f-9a0b-1c2d3e4f5a6b",
+          "ordinal": 8,
+          "name": "08R | RNP APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE] AT TIME [TIME]. EXP RNP APP. LDG DEP RWY 08R. RNP 08L AVAILABLE ON REQUEST. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "f1c3e0a2-4d5b-4e7f-8c6b-9f1e2d3a4b5c",
+          "ordinal": 9,
+          "name": "08R | VOR APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE] AT TIME [TIME]. EXP VOR APP. LDG DEP RWY 08R. RNP 08L AVAILABLE ON REQUEST. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "45414cc6-cd57-479b-9b3f-6288a927ac64",
+          "ordinal": 10,
+          "name": "26L | ILS APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE] AT TIME [TIME]. EXP ILS APP. LDG DEP RWY 26L. RNP 26R AVAILABLE ON REQUEST. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "307d414c-e04f-463f-9402-dc797f37dbdd",
+          "ordinal": 11,
+          "name": "26L | RNP APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE] AT TIME [TIME]. EXP RNP APP. LDG DEP RWY 26L. RNP 26R AVAILABLE ON REQUEST. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
+        },
+        {
+          "id": "dbef37c2-b59b-44fe-966c-60bbadbabfcc",
+          "ordinal": 12,
+          "name": "26L | VOR APCH",
+          "template": "THIS IS [FACILITY] ATIS INFORMATION [ATIS_CODE] AT TIME [TIME]. EXP VOR APP. LDG DEP RWY 26L. RNP 26R AVAILABLE ON REQUEST. [FULL_WX_STRING]. ADVS ACFT TYPE ON FIRST CONTACT. DURG PUSHBACK AND TAXI SQUAWK ASSIGNED XPDR CODE. [ARPT_COND] [NOTAMS] [CLOSING]",
+          "externalGenerator": {
+            "enabled": false
+          }
         }
       ],
       "contractions": [
